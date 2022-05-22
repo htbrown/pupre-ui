@@ -1,0 +1,27 @@
+$primary: #c20064;
+$light: #E7C9D8;
+$dark: #451C31;
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-light {
+    background-color: $light !important;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.col-primary {
+    color: $primary !important;
+}
+
+.col-light {
+    color: $light !important;
+}
+
+.col-dark {
+    color: $dark !important;
+}
