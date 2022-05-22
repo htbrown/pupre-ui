@@ -1,0 +1,65 @@
+@use 'colours';
+
+@font-face {
+    font-family: "akar-icons-btn";
+    src: url(https://cdn.jsdelivr.net/gh/artcoholic/akar-icons-fonts@1.1.0/src/fonts/akar-icons.ttf);
+}
+
+button, a.btn {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 10px 60px;
+    background-color: white;
+    border-radius: 4px;
+    border: 3px solid colours.$primary !important;
+    display: inline-block;
+    transition: all .1s;
+    color: colours.$primary;
+    margin-top: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+
+    * {
+        color: colours.$primary;
+    }
+
+    &.no-margin {
+        margin: 0 !important;
+    }
+
+    &.small {
+        padding: 5px 30px;
+    }
+
+    span {
+        color: colours.$primary !important;
+        transition: all .1s;
+        display: inline-block;
+        transform: translateX(-20px);
+
+        &:after {
+            content: '\f123';
+            font-family: 'akar-icons-btn';
+            font-size: 22px;
+            color: colours.$primary;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 12px);
+            transition: all .1s ease;
+        }
+    }
+
+    &:hover {
+        background-color: darken(white, 10%);
+        cursor: pointer;
+    }
+
+    &:hover span:after {
+        left: calc(100% + 18px);
+    }
+}
