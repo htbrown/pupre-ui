@@ -22,7 +22,7 @@ main {
     scroll-behavior: smooth;
 
     &.with-nav {
-        height: calc(100% - 100px - 1vh);
+        height: calc(100% - 120px - 1vh);
         width: calc(100% - 2vh);
         position: absolute;
         top: 100px;
