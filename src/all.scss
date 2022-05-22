@@ -2,12 +2,9 @@
 /* https://github.com/htbrown/shift-ui */
 /* https://htbrown.com                 */
 
-@import 'colours';
-@import 'variables';
-
-@import 'banner';
-@import 'base';
-@import 'footer';
-@import 'layout';
-@import 'navigation';
-@import 'text';
+@use 'banner';
+@use 'base';
+@use 'footer';
+@use 'layout';
+@use 'navigation';
+@use 'text';

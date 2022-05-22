@@ -1,9 +1,12 @@
+@use 'colours';
+@use 'variables';
+
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background-color: $dark;
+    background-color: colours.$dark;
 
     &.fixed {
         position: fixed;
@@ -15,14 +18,14 @@
 
     .banner-left {
         display: flex;
-        margin-left: $container_margin;
+        margin-left: variables.$container_margin;
         margin-right: 20px;
     }
 
     .banner-right {
         display: flex;
         margin-left: 20px;
-        margin-right: $container_margin;
+        margin-right: variables.$container_margin;
     }
 
     .banner-spacer {
@@ -38,7 +41,7 @@
         }
 
         i {
-            color: $light;
+            color: colours.$light;
         }
     }
 }

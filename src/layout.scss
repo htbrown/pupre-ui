@@ -1,5 +1,7 @@
+@use 'variables';
+
 .container {
-    margin: 0 $container_margin;
+    margin: 0 variables.$container_margin;
     max-width: 60%;
 }
 
