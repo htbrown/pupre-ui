@@ -22,10 +22,10 @@ main {
     scroll-behavior: smooth;
 
     &.with-nav {
-        height: calc(100% - 120px - 2vh);
+        height: calc(100% - $navbar_height - 2vh);
         width: calc(100% - 2vh);
         position: absolute;
-        top: calc(120px + 1vh);
+        top: calc($navbar_height + 1vh);
         left: 1vh;
     }
 
