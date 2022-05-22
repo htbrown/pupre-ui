@@ -46,7 +46,7 @@ p, span {
     color: $light !important;
 }
 
-a:not([class]) {
+a:not([class]), a.no-line {
     text-decoration: none;
     white-space: nowrap;
     color: $primary;
@@ -69,6 +69,10 @@ a:not([class]) {
         transform-origin: bottom left;
         border-radius: 4px;
         z-index: -1;
+    }
+
+    &.no-line:after {
+        background: transparent;
     }
 
     &:hover:after {
