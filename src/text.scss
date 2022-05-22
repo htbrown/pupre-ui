@@ -52,28 +52,29 @@ a:not([class]) {
     color: $primary;
     position: relative;
     z-index: 0;
+
     &.with-icon i {
         color: $primary;
     }
-}
 
-a:not([class]):after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -12%;
-    background: $primary;
-    transition: all .1s ease;
-    transform-origin: bottom left;
-    border-radius: 4px;
-    z-index: -1;
-}
+    &:after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -12%;
+        background: $primary;
+        transition: all .1s ease;
+        transform-origin: bottom left;
+        border-radius: 4px;
+        z-index: -1;
+    }
 
-a:hover:not([class]):after {
-    height: 128%;
-    background-color: darken($light, 10%);
+    &:hover:after {
+        height: 128%;
+        background-color: darken($light, 10%);
+    }
 }
 
 li {
