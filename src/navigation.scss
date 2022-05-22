@@ -6,8 +6,12 @@ nav {
     justify-content: space-between;
     z-index: 100;
 
-    img {
-        width: 80px;
+    .nav-brand {
+        img {
+            width: 80px;
+        }
+        display: block;
+        height: 80px;
     }
 
     .nav-right {
