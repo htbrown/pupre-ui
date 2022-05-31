@@ -10,17 +10,12 @@
     margin-bottom: 10px;
     border-radius: 4px;
 
-    &:hover {
-        background-color: darken(colours.$light, 10%);
-    }
-
     &.active {
         background-color: colours.$dark;
         color: colours.$light;
     }
 
     &.placeholder {
-        display: inline-block;
         background-color: darken(colours.$light, 10%);
         animation: pillPulse 1s infinite ease;
         width: 60px;
@@ -32,6 +27,16 @@
         color: colours.$light;
         font-size: 14px;
     }
+}
+
+a.pill {
+    &:hover {
+        background-color: darken(colours.$light, 10%);
+    }
+}
+
+.pills {
+    height: 50px;
 }
 
 @media screen and (max-width: 800px) {

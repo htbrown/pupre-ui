@@ -1,9 +1,5 @@
 @use 'colours';
-
-@font-face {
-    font-family: "akar-icons-btn";
-    src: url(https://cdn.jsdelivr.net/gh/artcoholic/akar-icons-fonts@1.1.0/src/fonts/akar-icons.ttf);
-}
+@use 'fonts';
 
 button, a.btn {
     outline: none;
@@ -26,6 +22,7 @@ button, a.btn {
 
     * {
         color: colours.$primary;
+        display: inline-block;
     }
 
     &.no-margin {
@@ -33,13 +30,25 @@ button, a.btn {
     }
 
     &.small {
-        padding: 5px 30px;
+        padding: 5px 30px !important;
+
+        &.no-arrow {
+            padding: 5px 20px !important;
+        }
+    }
+
+    &.no-arrow {
+        padding: 10px 30px;
+        font-size: 18px;
     }
 
     span {
         color: colours.$primary !important;
         transition: all .1s;
         display: inline-block;
+    }
+
+    &:not(.no-arrow) span {
         transform: translateX(-20px);
 
         &:after {
@@ -60,6 +69,6 @@ button, a.btn {
     }
 
     &:hover span:after {
-        left: calc(100% + 18px);
+        left: calc(100% + 16px);
     }
 }
