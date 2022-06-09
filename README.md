@@ -1,2 +1,2 @@
-# Shift UI
+# Pupre UI
 A customisable UI framework intended for use with my services and websites.
