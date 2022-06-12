@@ -47,3 +47,36 @@ main {
         justify-content: center;
     }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: darken(colours.$light, 5%); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: darken(colours.$primary, 10%); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: colours.$dark; 
+}
+
+*:target {
+  animation: targetFlash 2s;
+  animation-delay: .5s;
+  border-radius: 4px;
+}
+
+@keyframes targetFlash {
+  0% { background-color: transparent; }
+  20% { background-color: darken(colours.$light, 10%); padding: 20px; }
+  30% { background-color: transparent; }
+  40% { background-color: darken(colours.$light, 10%); padding: 20px; }
+  50% { background-color: transparent; }
+  60% { background-color: darken(colours.$light, 10%); padding: 20px; }
+  70% { background-color: transparent; }
+}
