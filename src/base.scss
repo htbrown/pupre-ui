@@ -1,0 +1,49 @@
+@use 'colours';
+@use 'variables';
+
+body, html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: colours.$light;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1vh solid colours.$primary;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    &.with-nav {
+        height: calc(100% - variables.$navbar_height - 2vh);
+        width: calc(100% - 2vh);
+        position: absolute;
+        top: calc(variables.$navbar_height + 1vh);
+        left: 1vh;
+    }
+
+    &.v-centre {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 1vh;
+    }
+
+    &.h-centre {
+        width: 100%;
+        justify-content: center;
+    }
+}

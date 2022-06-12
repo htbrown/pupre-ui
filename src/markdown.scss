@@ -1,0 +1,82 @@
+@use 'colours';
+@use 'fonts';
+
+blockquote {
+    border-left: 5px solid colours.$primary;
+    margin: 0;
+    padding: 20px 25px;
+    background-color: darken(colours.$light, 5%);
+    display: inline-block;
+    border-radius: 4px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+code {
+    padding: 0 3px;
+    margin: 0;
+    font-family: monospace;
+    border-radius: 4px;
+    display: block;
+    background-color: darken(colours.$light, 5%);
+    padding: 20px 25px;
+    margin: 10px 0;
+
+    * {
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
+    }
+
+    .highlighter-rouge {
+        background-color: rgba(colours.$primary, .25);
+        font-family: monospace;
+        padding: 0 3px;
+    }
+}
+
+div.highlight {
+    display: block;
+    padding: 5px;
+    background-color: rgba(colours.$primary, .25);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: darken(colours.$light, 10%);
+    margin: 0;
+    max-width: 50%;
+}
+
+.post-content {
+    h1, h2, h3, h4, h5, h6 { margin-top: 2em; }
+    img { padding-top: 20px; }
+}
+
+img {
+    & + span {
+        font-size: 18px;
+        font-style: italic;
+        display: block;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+
+        &:before {
+            content: '\f123';
+            font-family: 'akar-icons-btn';
+            color: colours.$primary;
+            font-style: normal;
+            font-size: 18px;
+            position: relative;
+            left: -10px;
+        }
+    }
+
+    border-radius: 4px;
+}
