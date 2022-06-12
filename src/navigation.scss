@@ -64,6 +64,7 @@ nav {
         border-radius: 4px;
         z-index: -1;
         opacity: 0;
+        background-color: colours.$primary;
     }
 
     &:hover:after, &.active:after {
