@@ -73,12 +73,13 @@ a:not([class]), a.no-line {
     }
 
     &.no-line:after {
-        background: transparent;
+        opacity: 0;
     }
 
     &:hover:after {
         height: 128%;
         background-color: darken(colours.$light, 10%);
+        opacity: 1;
     }
 }
 
