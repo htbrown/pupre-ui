@@ -16,22 +16,26 @@
     }
 
     &.placeholder {
+        display: inline-block;
         background-color: darken(colours.$light, 10%);
         animation: pillPulse 1s infinite ease;
         width: 60px;
         height: 18px;
     }
+}
 
-    &.pill-close {
-        margin-left: 12px;
-        color: colours.$light;
-        font-size: 14px;
-    }
+.pill-close {
+    margin-left: 12px;
+    color: colours.$light;
+    font-size: 14px;
 }
 
 a.pill {
     &:hover {
         background-color: darken(colours.$light, 10%);
+    }
+    &.active:hover {
+        background-color: darken(colours.$dark, 10%) !important;
     }
 }
 

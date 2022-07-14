@@ -18,9 +18,7 @@ body {
 }
 
 main {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -34,16 +32,19 @@ main {
     }
 
     &.v-centre {
-        height: 100%;
-        width: 100%;
+        height: calc(100% - 2vh);
         align-items: center;
+        display: flex;
         position: absolute;
-        top: 0;
+        top: 1vh;
         left: 1vh;
     }
 
     &.h-centre {
-        width: 100%;
+        display: flex;
+        width: calc(100% - 2vh);
+        left: 1vh;
+        position: absolute;
         justify-content: center;
     }
 }
