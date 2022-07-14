@@ -58,6 +58,11 @@ a:not([class]), a.no-line {
         color: colours.$primary;
     }
 
+    &.with-padding {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     &:after {
         content: '';
         height: 2px;

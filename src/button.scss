@@ -42,13 +42,19 @@ button, a.btn {
         font-size: 18px;
     }
 
+    &.inline {
+        padding: 0 10px !important;
+        margin: 5px 0 !important;
+        border-width: 2.5px !important;
+    }
+
     span {
         color: colours.$primary !important;
         transition: all .1s;
         display: inline-block;
     }
 
-    &:not(.no-arrow) span {
+    &:not(.no-arrow):not(.inline) span {
         transform: translateX(-20px);
 
         &:after {
