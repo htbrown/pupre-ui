@@ -1,6 +1,6 @@
 {
   "name": "pupre",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "UI framework for my apps and services.",
   "main": "src/all.scss",
   "repository": {

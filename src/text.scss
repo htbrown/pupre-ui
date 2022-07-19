@@ -1,16 +1,21 @@
 @use 'colours';
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
+@use 'fonts';
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
-    font-weight: 500;
+    font-weight: normal;
     margin: 15px 0;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
     color: colours.$dark;
-    font-weight: 100;
+    font-weight: normal;
+    font-style: normal;
+}
+
+em {
+    font-style: italic;
 }
 
 strong {
